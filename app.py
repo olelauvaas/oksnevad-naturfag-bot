@@ -20,7 +20,7 @@ spørsmål = st.text_input("Still et spørsmål om naturfag:")
 if spørsmål:
     with st.spinner("Tenker litt..."):
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": systemrolle},
                 {"role": "user", "content": spørsmål}
